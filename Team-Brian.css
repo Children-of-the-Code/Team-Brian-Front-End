@@ -1,0 +1,72 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #222222;
+}
+
+button {
+    background-color: #222222;
+    border: 1px solid #2b2f5c;
+    padding: 8px;
+}
+
+#header {
+    background-color: #2b2f5c;
+    color: lightblue;
+    border: thin solid black;
+    padding: 5px;
+    margin: auto;
+}
+
+#login {
+    color: lightblue;
+    position: absolute;
+    right: 85px;
+    top: 105px;
+}
+
+#form {
+    background-color: #2b2f5c;
+    color: lightblue;
+    border: thin solid black;
+    margin: 10px 0px 10px 0px;
+    padding: 15px;
+}
+
+#submit-login {
+    background-color: #222222;
+    color: lightblue;
+    border: 1px solid #2b2f5c;
+    margin: 8px;
+    padding: 8px;
+}
+
+#submit-register {
+    background-color: #222222;
+    color: lightblue;
+    border: 1px solid #2b2f5c;
+    margin: 8px;
+    padding: 8px;
+}
+
+#register {
+    color: lightblue;
+    position: absolute;
+    right: 15px;
+    top: 105px;
+}
+
+#forum {
+    color: lightblue;
+    font-weight: bold;
+}
+
+#posts {
+    background-color: #2b2f5c;
+    color: lightblue;
+    border: thin solid black;
+    margin: auto;
+    padding: 10px;
+}
