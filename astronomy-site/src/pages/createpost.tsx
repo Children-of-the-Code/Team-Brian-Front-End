@@ -8,9 +8,9 @@ export class Adduser extends React.Component <any , any>{
     }
     render(){
         return(
-            <div>
+            <div id="add-post">
                 <h3> Add new post </h3>
-                <input type="text" value = {this.state.inputValue} onInput = {event => this.updateInputValue(event)}></input>
+                <input type = "textarea" name = {this.state.inputValue} onInput = {event => this.updateInputValue(event)}></input>
                 <button onClick = {event=>this.submit(event)}>submit</button>
             </div>
         )
