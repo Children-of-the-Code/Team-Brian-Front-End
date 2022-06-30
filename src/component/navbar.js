@@ -5,9 +5,9 @@ export class Navbar extends React.Component {
     render(){
         return(
             <div>
-                <Link to="/Addcomment">Create Post </Link>
-                <Link to="/Addpost">Post Comment </Link>
-                <Link to="/UserList">See All Posts </Link>
+                <Link to="/AddComment">Create Post </Link>
+                <Link to="/AddPost">Post Comment </Link>
+                <Link to="/PostList">See All Posts </Link>
             </div>
         )
     }

@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { Navbar } from './component/navbar';
-import {HashRouter, Route, Routes} from 'react-router-dom'
-import {Addpost} from './pages/createpost';
-import {Addcomment} from './pages/addcomment';
-import { Register } from './pages/adduser';
+import { Navbar } from './component/Navbar';
+import { HashRouter, Route, Routes } from 'react-router-dom'
+import { AddComment } from './pages/AddComment';
+import { AstroRegister } from './pages/AstroRegister';
+import { CreatePost } from './pages/CreatePost';
+import { AstroLogin } from './pages/AstroLogin';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -24,9 +24,10 @@ root.render(
         {/* my set of routes that we will swap between */}
         <Routes>
           {/* each route needs a path and the element (page component) that it will load */}
-          <Route path="/Addpost" element = {<Addpost/>}/>
-          <Route path="/Addcomment" element = {<Addcomment/>}/>
-          <Route path="/Register" element = {<Register/>}/>
+          <Route path="/post" element = {<CreatePost/>}/>
+          <Route path="/comment" element = {<AddComment/>}/>
+          <Route path="/register" element = {<AstroRegister/>}/>
+          <Route path="/login" element = {<AstroLogin/>}/>
         </Routes>
       </div>
     </HashRouter>

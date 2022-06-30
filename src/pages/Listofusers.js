@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { RegisterUser } from '../component/register';
+import { RegisterUser } from '../component/UserCard';
 import { Register } from './adduser';
 
-export class Listofusers extends React.Component {
+export class ListOfUsers extends React.Component {
     constructor(props){
         super(props)
         this.state = {

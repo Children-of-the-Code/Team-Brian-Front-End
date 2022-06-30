@@ -1,5 +1,5 @@
 import * as React from 'react';
-export class Addpost extends React.Component{
+export class CreatePost extends React.Component{
     constructor(props){
         super(props);
         this.state = {

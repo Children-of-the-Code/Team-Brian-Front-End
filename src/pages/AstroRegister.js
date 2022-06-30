@@ -1,5 +1,5 @@
 import * as React from 'react';
-export class Register extends React.Component {
+export class AstroRegister extends React.Component {
     constructor(props){
         super(props);
         this.state = {
@@ -11,7 +11,7 @@ export class Register extends React.Component {
             <div>
                 <h1>Register</h1>
                 <input type="text" value = {this.state.inputValue} onInput = {event => this.updateInputValue(event)}></input>
-                    {/* <p>First Name</p>
+                    /* <p>First Name</p>
                     <input type="text" value = {this.state.inputValue} onInput = {event => this.updateInputValue(event)}></input>
                     <p>Last Name</p>
                     <input type="text" value = {this.state.inputValue} onInput = {event => this.updateInputValue(event)}></input>
@@ -20,7 +20,7 @@ export class Register extends React.Component {
                     <p>Username</p>
                     <input type="text" value = {this.state.inputValue} onInput = {event => this.updateInputValue(event)}></input>
                     <p>Password</p>
-                    <input type="text" value = {this.state.inputValue} onInput = {event => this.updateInputValue(event)}></input> */}
+                    <input type="text" value = {this.state.inputValue} onInput = {event => this.updateInputValue(event)}></input> */
                 <button onClick = {event=>this.submit(event)}>submit</button>
             </div>
         )
@@ -33,7 +33,7 @@ export class Register extends React.Component {
     }
     submit(event){
         let post = this.state.inputValue;
-        fetch("https://astrolounge.azurewebsites.net/astroUser", {
+        fetch("https://astrolounge.azurewebsites.net/astroUser/register", {
             method: "POST",
             mode: "cors",
             headers: {
