@@ -1,6 +1,8 @@
 import * as React from 'react';
-import { RegisterUser } from '../component/RegisterUser';
-import { Register } from './Register';
+import { RegisterUser } from '../component/register';
+import { Register } from './adduser';
+export class Getallusers extends React.Component<{}, { astroUsers: string }> {
+}
 
 // plan: artist list - clickable list of artists (lets say for a museum directory)
 // artist page - a page containing all of an artists paintings
@@ -31,10 +33,10 @@ export class Listofusers extends React.Component {
                 {}
                 <div className='column'>
                    
-                {this.state.users.map((user: { firstname: any; latsname: any; email: any; username: any; password: any; })=> <RegisterUser firstname={user.firstname} lastname = {user.latsname} email = {user.email} username = {user.username} password = {user.password} navigateToUserClick = {this.navigateToUser.bind(this)} ></RegisterUser>)}
+                {this.state.astroUsers.map((user: { firstname: any; latsname: any; email: any; username: any; password: any; })=> <RegisterUser firstname={user.firstname} lastname = {user.latsname} email = {user.email} username = {user.username} password = {user.password} navigateToUserClick = {this.navigateToUsers.bind(this)} ></RegisterUser>)}
                 </div>
                 <div className='column'>
-                    <Register currentUser {this.state.currentUser} user_ID = {this.state.currentUser_ID}/>
+                    <Register currentUser {this.state.currentAstroUser} user_ID = {this.state.currentAstroUser_ID}/>
                 </div>
             </div>
         );
@@ -43,7 +45,7 @@ export class Listofusers extends React.Component {
         console.log(name);
         // I want to navigate to the artist i clicked on
         this.setState({
-            artists:this.state.users,
+            artists:this.state.astroUsers,
             currentUser:name,
             currentuser_ID:id
         })

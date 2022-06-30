@@ -1,6 +1,6 @@
 import * as React from 'react';
 export class RegisterUser extends React.Component {
-    constructor(props){
+    constructor(props : any){
         // run the constructor of React.Component first
         super(props);
 

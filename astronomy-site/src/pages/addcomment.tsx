@@ -1,6 +1,6 @@
  import * as React from 'react';
  export class Addcomment extends React.Component{
-     constructor(props){
+     constructor(props :any){
          super(props);
      }
      render(){
