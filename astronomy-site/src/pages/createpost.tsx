@@ -1,6 +1,6 @@
 import * as React from 'react';
-export class Adduser extends React.Component <any , any>{
-    constructor(props : any){
+export class Addpost extends React.Component /*<any , any>*/{
+    constructor(props){
         super(props);
         this.state = {
             inputValue : ""
@@ -15,15 +15,15 @@ export class Adduser extends React.Component <any , any>{
             </div>
         )
     }
-    updateInputValue(event : any){
+    updateInputValue(event){
         let value = event.target.value;
         this.setState({
             inputValue : value
         })
     }
-    submit(event : any){
+    submit(event){
         let post = this.state.inputValue;
-        fetch("https://astrolounge.azurewebsites.net", {
+        fetch("https://astrolounge.azurewebsites.net/astroUser/post", {
             method: "POST",
             mode: "cors",
             headers: {
